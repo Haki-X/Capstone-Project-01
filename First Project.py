@@ -37,6 +37,12 @@ def menu():
         print("5. 🚪 Keluar dari program")
         pilihan = input("\nMasukkan pilihanmu (1-5): ")
 
+        while True:
+            pilihan = input("\nMasukkan pilihanmu (1-5): ").strip()
+            if pilihan in ["1", "2", "3", "4", "5"]:
+                break  
+            print("⚠️  Pilihan nggak valid. Masukkan hanya angka 1 sampai 5 ya!")
+
         if pilihan == "1":
             tampilkan_data()
         elif pilihan == "2":
@@ -48,8 +54,7 @@ def menu():
         elif pilihan == "5":
             print("\n👋 Terima kasih sudah pakai program ini. Sampai jumpa lagi ya!\n")
             break
-        else:
-            print("⚠️  Pilihan nggak valid. Coba pilih antara 1 - 5 aja ya.\n")
+
 
 def cetak_tabel():
     print("-" * 115)
