@@ -157,8 +157,9 @@ def tampilkan_data():
 
         if not ditemukan_data:
             print("Tidak ada data bisnis untuk kategori ini.")
-        print()
-        navigasi_setelah_aksi() 
+            print()
+            navigasi_setelah_aksi()
+        
    
     elif pilih_menu == 3: 
         cari_nama = input("Masukkan nama bisnis yang ingin dicari (sebagian atau penuh): ").strip().lower()
@@ -177,7 +178,7 @@ def tampilkan_data():
             print()
         else:
             print(f"Tidak ditemukan bisnis dengan nama yang mengandung '{cari_nama}'.")
-        navigasi_setelah_aksi()
+            navigasi_setelah_aksi()
 
     else:
         print("Pilihan menu tidak valid.")
